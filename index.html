@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>T CAIRO</title>
+	<link rel="stylesheet"  href="css/jquery.mobile.min.css">
+	<style>
+		#homeBanner {
+			width: 100%;
+		}
+		.center {
+			text-align: center;
+			margin-left: auto;
+			margin-right:auto;
+		}
+		.banner {
+			display:block;
+			width: 100%;
+		}
+		#qrcode {
+			display:block;	
+			margin-left: auto;
+			margin-right:auto;
+		}
+		#map2 {
+			margin-left: auto;
+			margin-right:auto;
+			width: 320px;
+			height: 320px;  
+	
+		
+	</style>
+	
+	
+	
+	<link rel="stylesheet" href="css/leaflet.css" />
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.mobile.min.js"></script>
+	
+
+
+</head>
+	
+<body>
+
+
+
+<div id="homeScreen" data-role="page">
+	<img src="imgs/bannersamp.jpg" class="banner" />
+	<div data-role="content">
+	
+	
+	<!-- header -->
+
+   <!-- content -->
+	
+<ul data-role="listview"  data-filter="true" data-inset="true" class="ui-nodisc-icon ui-alt-icon" data-filter-placeholder="Search">
+
+<header data-role="header" data-position="fixed" data-id="appHeader">
+<h1>PKG MANTIN</h1>
+	</header>
+	<h1 class="center">CITRA WARNI</h1>
+        
+<ul data-role="listview" data-inset="true">
+    <li data-role="list-divider">Rabu, March 31, 2015 
+    <li><a href="#andriod">
+    <h2>Pelancaran peranti aplikasi Andriod</h2>
+    <p><strong>Pelancaran peranti aplikasi Andriod PKG Mantin</strong></p>
+    <p>Pada hari Jumaat ini PKG Mantin akan melancarkan aplikasi Peranti Andriod bernama PKG Mantin...</p>
+        <p class="ui-li-aside"><strong>6:24</strong>PM</p>
+       
+    </a></li>
+    <li data-role="list-divider">Rabu, Aril 12, 2015
+    <li><a href="#rimup">
+    <h2>Program RIMUP</h2>
+    <p><strong>Sukan RIMUP</strong></p>
+    <p>Program RIMUP adalah gabungan tiga buah sekolah...</p>
+        <p class="ui-li-aside"><strong>8:58</strong>AM</p>
+        
+    </a></li>
+    <li data-role="list-divider">Khamis, October 7, 2015 
+    <li><a href="#GST">
+    <h2>Pelaksaan GST</h2>
+    <p><strong>Pelaksanaan GST di Malaysia</strong></p>
+    <p>Mulai 1 April 2015 GST akan dilaksanakan. Semua kedai hendaklah didaftarkan dibawah KPDNKK...</p>
+        <p class="ui-li-aside"><strong>4:48</strong>PM</p>
+    
+            </a></li>
+    <li data-role="list-divider">Khamis, October 8, 2015 
+    <li><a href="#abad21">
+    <h2>Pembelajaran Abad ke-21</h2>
+    <p><strong>Pembelajaran abad ke-21 di semua sekolah</strong></p>
+    <p>Mulai 21 April 2015 pembelajaran abad ke-21 akan dilaksanankan di semua sekolah...</p>
+        <p class="ui-li-aside"><strong>4:48</strong>PM</p>
+   
+        </a></li>
+    <li data-role="list-divider">Jumaat, April 9, 2015
+    <li><a href="#pbl">
+        <h2> Project base learning</h2>
+        <p><strong>Pembelajaran berasaskan projek</strong></p>
+        <p>Pada bulan Julai pertandingan pembelajaran berasaskan project peringkat PKG akan diadakan di PKG Mantin. Semua sekolah wajib mengambil bahagina dalam pertandingan tersebut..</p>
+        <p class="ui-li-aside"><strong>9:48</strong>PM</p>
+        
+   
+<div class="ui-grid-a center">
+<div class="ui-block-a">
+<a href="#aboutScreen" class="ui-btn ui-corner-all ui-icon-info ui-btn-icon-notext ui-btn-inline ui-nodisc-icon ui-alt-icon">Info</a> 	
+    </div>
+<div class="ui-block-b">
+<a href="#mapScreen" class="ui-btn ui-corner-all ui-icon-location ui-btn-icon-notext ui-btn-inline ui-nodisc-icon ui-alt-icon">Map</a>
+			
+    </div>
+		</div>
+</ul>
+        
+	</div>
+</div>
+
+<div id="andriod" data-role="page">
+	<header data-role="header" data-position="fixed" data-id="appHeader">
+		<h1>Peranti aplikasi andriod</h1>
+		<a href="#homeScreen" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+	</header>
+	<div data-role="content">
+         <img src="imgs/thiruvalluvar.png">
+    <p><strong>Pelancaran peranti aplikasi Andriod PKG Mantin akan diadakan di PKG Mantin pada Jumaat ini pada pukul 9 pagi oleh Pegawai PPD.</strong></p>
+
+	</div>
+</div>
+        <div id="rimup" data-role="page">
+	<header data-role="header" data-position="fixed" data-id="appHeader">
+		<h1>Program RIMUP</h1>
+		<a href="#homeScreen" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+	</header>
+	<div data-role="content">
+   <p><strong>Pelancaran program RIMUP PERINGKAT pkg.Sebanyak tiga buah sekolah mengambil bahagian pada tahun ini.</strong></p>
+
+</div>
+</div>
+     <div id="GST" data-role="page">
+	<header data-role="header" data-position="fixed" data-id="appHeader">
+		<h1>Good and Service Tax</h1>
+		<a href="#homeScreen" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+	</header>
+	<div data-role="content">
+    <p><strong>Mulai 1 April 2015 GST akan dilaksanakan seluruh Malaysia. Semua kedai/syarikat dan MNC hendaklah didaftarkan dibawah KPDNKK. Peniaga yang enggan mendaftar dan mengenakan GST akan diambil tindakan undang-undang.</strong></p>     
+    
+         </div>
+    </div>
+        
+<div id="frogvle" data-role="page">
+	<header data-role="header" data-position="fixed" data-id="appHeader">
+		<h1>Frog VLE SEKOLAH</h1>
+		<a href="#homeScreen" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+	</header>
+	<div data-role="content">
+
+        </div>
+    </div>
+        
+<div id="GSTCalculator" data-role="page">
+    <header data-role="header" data-position="fixed" data-id="appHeader">
+        <h1>GST Calculator</h1>
+<a href="#homeScreen" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+    <a href="#settingsPage" id='settingsButton' class="ui-btn-right" data-role="button" data-icon="gear">Settings</a>
+</header> 
+<div data-role="content">
+     <form>
+            <div data-role="fieldcontain">
+                <label for="billAmount">Bill Amount:</label>
+                <input type="number" name="billAmount" id="billAmount" data-clear-btn="true" maxlength="3" value="" placeholder="Enter amount here">
+            </div>
+            <p style="text-align: center;">
+                <a href="#" id="calcTip" data-role="button" data-icon="check">Calculate GST</a>
+            </p>
+            <p class="amounts">
+                <label>GST Amount</label>
+                <span id="tipAmount">$0.00</span>
+            </p>
+            <p class="amounts totals">
+                <label>Total Amount</label>
+                <span id="totalAmount">$0.00</span>
+            </p>
+    </form>
+    </div>
+    </div>
+<div data-role="page" class="" id="settingsPage" data-add-back-btn="true" >
+    <div data-role="header" class="">
+        <a href="#GSTCalculator" class="ui-btn ui-icon-delete ui-btn-icon-left" data-rel="back">Cancel</a>
+        <h1>GST - Settings</h1>
+    </div>
+    <div data-role="content" class="">
+        <form>
+            <input type="number" name="tipPercentage" id="tipPercentage" value="" placeholder="Tip Percentage">
+            <p style="text-align: center;">
+                <a href="#" id='saveSettings' data-role="button" data-inline="true" data-icon="check">Save</a>
+            </p>
+        </form>
+    </div>
+</div>
+<script type="text/javascript" src="cordova.js"></script>
+<script src="js/app.js"></script>
+    </div>
+</div>
+
+<div id="abad21" data-role="page">
+	<header data-role="header" data-position="fixed" data-id="appHeader">
+		<h1>Pembelajaran abad ke-21</h1>
+		<a href="#homeScreen" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+	</header>
+	<div data-role="content">
+	<p><strong>Mulai 21 April 2015 pembelajaran abad ke-21 akan dilaksanankan di semua sekolah. Semua sekolah telah melaksanakan i-think dalam talian dengan jayanya. PPD telah mengucapkan terima kasih kepada semua yang terlibat dalam kursus i-think. seterusnya peserta yang gagal hendaklah mengisi semula datanya.
+</div>	
+</div>
+          <div id="pbl" data-role="page">
+	<header data-role="header" data-position="fixed" data-id="appHeader">
+		<h1>Pembelajran berasaskan projek</h1>
+		<a href="#homeScreen" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+	</header>
+	<div data-role="content">
+   <p><strong>Pelancaran program RIMUP PERINGKAT pkg.Sebanyak tiga buah sekolah mengambil bahagian pada tahun ini.</strong></p>  
+
+    </div>	
+</div>        
+    <div id="aboutScreen" data-role="page">
+	<header data-role="header" data-position="fixed" data-id="appHeader">
+		<h1>OMTAMIL</h1>
+		<a href="#homeScreen" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+	</header>
+	<div data-role="content">
+		<h2 class="center">OMTAMIL DOTCOM (002135971-U)</h2>
+		
+		<img src="imgs/omtamil.tv logo.png" />
+    
+</div>	
+</div>
+    
+<div id="mapScreen" data-role="page">
+	<header data-role="header" data-position="fixed" data-id="appHeader">
+		<h1>PKG MANTIN</h1>
+		<a href="#homeScreen" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+	</header>
+	<div data-role="content">
+		<h2 class="center">PUSAT KEGIATAN GURU</h2>
+		<p class="center">No. 16, Jln SL9/9A, Palm Walk, Mantin ,<br>71700 N.Sembilan MALAYSIA</p>
+
+		<p class="center"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15936.71331928049!2d101.79669249999999!3d3.0468525000000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc3367e9ed6c9f%3A0x38d1b5e827f2b4cf!2sJalan+SL+9%2F9a%2C+Bandar+Sungai+Long%2C+43000+Kajang%2C+Selangor!5e0!3m2!1sta!2smy!4v1426691527742" width="600" height="450" frameborder="0" style="border:0"></iframe></p>
+
+	</div>
+</div>
+
+
+
+
+	
+
+</p>
+	</div>
+</div>
+	<!--
+	Admission
+	Directions
+	Parking
+	Hours
+	Volunteer
+	-->
+	
+	
+	
+   </div>
+  </div>
+  <!-- End of References -->
+	
+	
+	
+	
+</body>
+</html>
